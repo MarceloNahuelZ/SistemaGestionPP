@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Bienvenidos! - Práctica Profesionalizante TECLAB 2024</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/site.css" />
+    <style>
+        .border-top {
+            border-top: 1px #dee2e6 !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="display-4">¡Bienvenidos!</h1>
+        <h2>Sistema de Gestion </h2>
+        <p class="lead">Hospital Perinolo</p>
+        <div>
+            <a class="btn btn-primary btn-lg mr-2" asp-controller="Medico" asp-action="Index">Medicos</a>
+            <a class="btn btn-success btn-lg" asp-controller="Paciente" asp-action="Index">Pacientes</a>
+            <a class="btn btn-danger btn-lg" asp-controller="Turno" asp-action="Index">Turnos</a>
+        </div>
+    </div>
+
+    <footer class="text-muted text-center">
+        <p>Desarrollado por Marcelo Nahuel Zabaletta</p>
+    </footer>
+    <div id="reloj" class="text-center mt-4">
+        <span id="hora"></span>:<span id="minuto"></span>:<span id="segundo"></span>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

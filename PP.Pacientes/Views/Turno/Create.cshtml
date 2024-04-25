@@ -1,0 +1,83 @@
+﻿@model PP.APIServer.Models.Turno
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create Turno</h1>
+
+<h4>Turno</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Fecha" class="control-label">Fecha</label>
+                <input asp-for="Fecha" class="form-control" />
+                <span asp-validation-for="Fecha" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Medico.Nombre" class="control-label">Nombre del Médico</label>
+                <input asp-for="Medico.Nombre" class="form-control" />
+                <span asp-validation-for="Medico.Nombre" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Medico.Apellido" class="control-label">Apellido del Médico</label>
+                <input asp-for="Medico.Apellido" class="form-control" />
+                <span asp-validation-for="Medico.Apellido" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Medico.Especialidad" class="control-label">Especialidad del Médico</label>
+                <input asp-for="Medico.Especialidad" class="form-control" />
+                <span asp-validation-for="Medico.Especialidad" class="text-danger"></span>
+            </div>
+
+          
+
+            <div class="form-group">
+                <label asp-for="Paciente.Nombre" class="control-label">Nombre del Paciente</label>
+                <input asp-for="Paciente.Nombre" class="form-control" />
+                <span asp-validation-for="Paciente.Nombre" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Paciente.Apellido" class="control-label">Apellido del Paciente</label>
+                <input asp-for="Paciente.Apellido" class="form-control" />
+                <span asp-validation-for="Paciente.Apellido" class="text-danger"></span>
+            </div>
+
+            
+            <div class="form-group">
+                <label asp-for="Paciente.Email" class="control-label">Email del Paciente</label>
+                <input asp-for="Paciente.Email" class="form-control" />
+                <span asp-validation-for="Paciente.Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Paciente.ObraSocial" class="control-label">Obra Social del Paciente</label>
+                <input asp-for="Paciente.ObraSocial" class="form-control" />
+                <span asp-validation-for="Paciente.ObraSocial" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Paciente.NAfiliado" class="control-label">Número de Afiliado del Paciente</label>
+                <input asp-for="Paciente.NAfiliado" class="form-control" />
+                <span asp-validation-for="Paciente.NAfiliado" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-controller="Turno" asp-action="Index">Atras</a>
+</div>
+

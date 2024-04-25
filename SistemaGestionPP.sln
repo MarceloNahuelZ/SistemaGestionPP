@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PP.APIServer", "PP.APIServer\PP.APIServer.csproj", "{A8E343A0-9A64-462B-8772-90A2FEA80FDC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PP.Pacientes", "PP.Pacientes\PP.Pacientes.csproj", "{C126D1C6-DA0B-4B77-B043-610CF7C07115}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8E343A0-9A64-462B-8772-90A2FEA80FDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8E343A0-9A64-462B-8772-90A2FEA80FDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8E343A0-9A64-462B-8772-90A2FEA80FDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8E343A0-9A64-462B-8772-90A2FEA80FDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C126D1C6-DA0B-4B77-B043-610CF7C07115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C126D1C6-DA0B-4B77-B043-610CF7C07115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C126D1C6-DA0B-4B77-B043-610CF7C07115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C126D1C6-DA0B-4B77-B043-610CF7C07115}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0B87D10-6168-4A59-BCF1-3DDE7563E083}
+	EndGlobalSection
+EndGlobal

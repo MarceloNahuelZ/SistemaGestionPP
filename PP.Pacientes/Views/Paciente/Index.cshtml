@@ -1,0 +1,102 @@
+﻿@model IEnumerable<PacienteViewModel>
+
+<div class="card text-primary">
+    <div class="card-header text-center">
+        <h5>Lista de Pacientes</h5>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <hr />
+                        <form asp-action="Filtrar" asp-controller="Paciente" method="post">
+                            <div class="form-group">
+                                <label for="filtro">Filtrar por Nombre:</label> <br />
+                                                               
+                                <input type="text" id="filtro" name="filtro" class="form-control" />
+                            </div><br /> 
+                           
+                            <button type="submit" class="btn btn-primary btn-sm">Buscar</button>
+                            <a asp-action="Create" class="btn btn-outline-primary btn-sm">Crear Nuevo</a>
+
+                        </form>
+                        <hr />
+                        <h5 class="panel-title">Pacientes</h5>
+                    </div>
+                    <div class="panel-body">
+                        @if (Model.Any())
+                        {
+                            <table class="table table-hover table-responsive table-striped" id="MyTable">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Nombre)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Apellido)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Edad)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Email)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.ObraSocial)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.NAfiliado)
+                                        </th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Nombre)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Apellido)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Edad)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Email)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.ObraSocial)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.NAfiliado)
+                                            </td>
+                                            <td>
+                                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-warning btn-sm">Editar</a>
+                                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-danger btn-sm">Eliminar</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        }
+                        else
+                        {
+                            <p>No se encontraron pacientes.</p>
+                        }
+                    </div>
+                                    
+                    <a asp-action="Index" class="btn btn-outline-success btn-sm">Volver a la lista</a>
+                    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-success btn-sm">Atras</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-footer text-muted text-center">
+        Practica Profesionalizante TECLAB 2024 <br />
+        Zabaletta Marcelo Nahuel
+    </div>
+</div>

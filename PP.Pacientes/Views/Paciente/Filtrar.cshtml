@@ -1,0 +1,57 @@
+﻿@model PP.Pacientes.Models.PacienteViewModel
+
+<div class="card text-primary">
+    <div class="card-header text-center">
+        <h5>Editar Paciente </h5>
+    </div>
+    <div class="card-body text-primary">
+        <div class="row">
+            <div class="col-md-12">
+                <form asp-action="Filtrar">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="Id" />
+
+                    <div class="form-group">
+                        <label asp-for="Nombre" class="control-label"></label>
+                        <input asp-for="Nombre" class="form-control" />
+                        <span asp-validation-for="Nombre" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Apellido" class="control-label"></label>
+                        <input asp-for="Apellido" class="form-control" />
+                        <span asp-validation-for="Apellido" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Edad" class="control-label"></label>
+                        <input asp-for="Edad" class="form-control" />
+                        <span asp-validation-for="Edad" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label"></label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="ObraSocial" class="control-label"></label>
+                        <input asp-for="ObraSocial" class="form-control" />
+                        <span asp-validation-for="ObraSocial" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="NAfiliado" class="control-label"></label>
+                        <input asp-for="NAfiliado" class="form-control" />
+                        <span asp-validation-for="NAfiliado" class="text-danger"></span>
+                    </div>
+      
+                </form>
+
+            </div>
+            
+        </div>
+    </div>
+</div>
+

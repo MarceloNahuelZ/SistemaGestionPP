@@ -1,0 +1,68 @@
+* {
+    font-family: Consolas;
+}
+
+html {
+    font-size: 15px;
+    
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/006/712/964/non_2x/abstract-health-medical-science-healthcare-icon-digital-technology-doctor-concept-modern-innovation-treatment-medicine-on-hi-tech-future-blue-background-for-wallpaper-template-web-design-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff; 
+    margin-bottom: 60px;
+}
+
+.container {
+    padding: 100px 15px;
+    text-align: center;
+    border: none;
+}
+
+.btn {
+    margin: 10px;
+}
+
+.border-top {
+    border-top: 1px #dee2e6 !important;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+}
+
+
+
+h1, h2 {
+    margin-top: 20px;
+    font-size: 
+        35px;
+    
+}
+
+#reloj{
+    font-size: 25px;
+}
